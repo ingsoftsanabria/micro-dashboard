@@ -4,10 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "npm run serve:single-spa:micro-dashboard",
-    "build": "npm run build:single-spa:micro-dashboard",
+    "build": "npm run build:single-spa-aux:micro-dashboard",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "build:single-spa-aux:micro-dashboard": "ng build micro-dashboard --prod",
     "build:single-spa:micro-dashboard": "ng build micro-dashboard --prod --deploy-url http://localhost:4202/",
     "serve:single-spa:micro-dashboard": "ng s --project micro-dashboard --disable-host-check --port 4202 --deploy-url http://localhost:4202/ --live-reload false"
   },
